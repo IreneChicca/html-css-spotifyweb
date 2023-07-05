@@ -61,18 +61,31 @@ footer {
 
 /* RESPONSIVE */
 
+/* spotify-md laptop */
 
+@media screen and (max-width:1250px) {
 
-@media screen and (max-width:992px) {
-    aside {
-        background-color: blue;
+    footer {
+        background-color: yellow;
     }
+
 }
 
 
+/* spotify-sm tablet */
+
+@media screen and (max-width:992px) {
+    footer {
+        background-color: green;
+    }
+
+}
+
+/* spotify-x-small mobile */
+
 @media screen and (max-width:576px) {
 
-    aside {
-        background-color: red;
+    footer {
+        background-color: lightblue;
     }
 }
