@@ -1,3 +1,6 @@
+/* RESET */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +9,70 @@
 
 img {
     max-width: 100%;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/* LAYOUT */
+
+
+.flex {
+    display: flex;
+}
+
+header {
+    background-color: antiquewhite;
+    height: 7rem;
+    position: fixed;
+    left: 18rem;
+    right: 0;
+
+}
+
+main {
+    height: calc(100vh - 7rem);
+    background-color: lightgreen;
+    width: calc(100% - 18rem);
+    font-size: 5rem;
+    overflow: auto;
+}
+
+nav {
+    width: 18rem;
+    background-color: pink;
+}
+
+
+
+footer {
+    height: 7rem;
+    background-color: aquamarine;
+}
+
+
+/* SECTIONS */
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+
+@media screen and (max-width:992px) {
+    aside {
+        background-color: blue;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+
+    aside {
+        background-color: red;
+    }
 }
