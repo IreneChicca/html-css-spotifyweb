@@ -1,10 +1,25 @@
 /* RESET */
 
+:root {
+    --txt-color-primary: #ffff;
+    --txt-color-second: #6f6f6f;
+
+    --bg-color-primary: #141922;
+    --bg-color-second: #282828;
+
+    --head-color: #080b12;
+}
+
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -15,6 +30,10 @@ img {
     border: 1px solid red;
 }
 
+
+
+
+
 /* LAYOUT */
 
 
@@ -22,34 +41,6 @@ img {
     display: flex;
 }
 
-header {
-    background-color: antiquewhite;
-    height: 7rem;
-    position: fixed;
-    left: 18rem;
-    right: 0;
-
-}
-
-main {
-    height: calc(100vh - 7rem);
-    background-color: lightgreen;
-    width: calc(100% - 18rem);
-    font-size: 5rem;
-    overflow: auto;
-}
-
-nav {
-    width: 18rem;
-    background-color: pink;
-}
-
-
-
-footer {
-    height: 7rem;
-    background-color: aquamarine;
-}
 
 
 /* SECTIONS */
@@ -59,14 +50,58 @@ footer {
 
 
 
+main {
+
+    background-color: pink;
+
+    display: flex;
+}
+
+
+nav {
+    width: 15rem;
+    background-color: yellow;
+}
+
+
+section {
+    background-color: greenyellow;
+    width: calc(100% - 15rem);
+
+    overflow: auto;
+    height: calc(100vh - 6rem);
+
+}
+
+header {
+    height: 6rem;
+    background-color: rgba(255, 228, 196, 0.514);
+    position: fixed;
+
+}
+
+#music {
+    padding-top: 8rem;
+}
+
+
+footer {
+    height: 6rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 /* RESPONSIVE */
 
 /* spotify-md laptop */
 
 @media screen and (max-width:1250px) {
 
-    footer {
-        background-color: yellow;
+    header {
+        background-color: skyblue;
     }
 
 }
@@ -75,8 +110,8 @@ footer {
 /* spotify-sm tablet */
 
 @media screen and (max-width:992px) {
-    footer {
-        background-color: green;
+    header {
+        background-color: palevioletred;
     }
 
 }
@@ -85,7 +120,7 @@ footer {
 
 @media screen and (max-width:576px) {
 
-    footer {
-        background-color: lightblue;
+    header {
+        background-color: greenyellow;
     }
 }
