@@ -5,7 +5,8 @@
     --txt-color-second: #6f6f6f;
 
     --bg-color-primary: #141922;
-    --bg-color-second: #282828;
+    --bg-color-footer: #282828;
+    --bg-color-sidebar: #000000;
 
     --head-color: #080b12;
 }
@@ -77,6 +78,8 @@ header {
     height: 6rem;
     background-color: rgba(255, 228, 196, 0.514);
     position: fixed;
+    left: 15rem;
+    right: 0;
 
 }
 
@@ -85,12 +88,108 @@ header {
 }
 
 
-footer {
+
+/* footer */
+
+
+#footer {
     height: 6rem;
-    background-color: aquamarine;
+    background-color: var(--bg-color-footer);
     display: flex;
     justify-content: space-between;
 }
+
+
+#footer .song-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#footer .song-info img {
+    width: 4rem;
+}
+
+#footer .song-info h5 {
+    color: var(--txt-color-primary);
+}
+
+#footer .song-info h6 {
+    color: var(--txt-color-second);
+}
+
+#footer .song-info i {
+    color: var(--txt-color-second);
+}
+
+#footer .song-player {
+
+    color: var(--txt-color-primary);
+}
+
+
+#footer .song-player .song-buttons {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+#footer .song-player .song-bar {
+    height: 35%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#footer .song-bar .bar {
+    display: block;
+    background-color: #5a5a5a;
+    width: 30rem;
+    height: 3px;
+    border-radius: 3px;
+
+}
+
+.song-bar .bar-progress {
+    display: block;
+    background-color: #c1c1c1;
+    width: 25%;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.song-volume {
+    color: var(--txt-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.song-volume .bar-small {
+    display: block;
+    background-color: #5a5a5a;
+    width: 5rem;
+    height: 3px;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+
+.song-volume .bar-progress-small {
+    display: block;
+    background-color: #c1c1c1;
+    width: 20%;
+    height: 3px;
+    border-radius: 3px;
+}
+
+
+
 
 
 
