@@ -51,6 +51,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - 6rem);
+    overflow: hidden;
 
 
 }
@@ -71,6 +72,9 @@ main {
     padding: .5rem 0;
 }
 
+#sidebar .sidebar-icons img[alt="logosmall"] {
+    display: none;
+}
 
 .sidebar-icons div img {
     width: 15%;
@@ -82,7 +86,7 @@ main {
     flex-direction: column;
     gap: 1.2rem;
     text-align: start;
-    overflow-y: auto;
+    padding-top: 1rem;
     height: calc(100vh /2);
 }
 
@@ -101,9 +105,16 @@ main {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+.playlist-list {
+    overflow: auto;
+    min-height: 200px;
+}
 
 
-
+.playlist-list>* {
+    padding-bottom: .5rem;
 }
 
 .sidebar-playlist span {
@@ -160,8 +171,11 @@ main {
 #sidebar h5:hover,
 #sidebar .create-playlist:hover,
 #sidebar .user h6:hover {
-    color: var(--txt-color-primary)
+    color: var(--txt-color-primary);
+    cursor: pointer;
 }
+
+
 
 #sidebar .create-playlist:hover span {
     background-color: var(--txt-color-primary);
@@ -180,6 +194,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: end;
+    z-index: 1;
 
 }
 
@@ -428,6 +443,9 @@ section {
     display: none;
 }
 
+
+
+
 /* hover effects footer*/
 
 #footer .song-info i:hover {
@@ -518,4 +536,51 @@ section {
 
 /* spotify-x-small mobile */
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    #sidebar {
+        width: 4rem;
+    }
+
+    #sidebar .sidebar-playlist,
+    #sidebar h5,
+    #sidebar .user h6,
+    #sidebar .sidebar-icons img[alt="logo"] {
+        display: none;
+    }
+
+    #sidebar .sidebar-icons img[alt="logosmall"] {
+        display: block;
+    }
+
+    #sidebar .sidebar-icons img {
+        width: 100%;
+    }
+
+    #sidebar .user div:first-child {
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    #header {
+        left: 4rem;
+
+    }
+
+
+
+    section {
+
+        width: calc(100% - 4rem);
+    }
+
+    #footer>* {
+
+        width: calc(100% / 3);
+
+
+    }
+
+
+
+
+}
