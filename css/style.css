@@ -36,9 +36,6 @@ img {
 /* LAYOUT */
 
 main {
-
-    background-color: pink;
-
     display: flex;
 }
 
@@ -232,13 +229,15 @@ section {
 #music .menu-options {
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0 auto;
+
 }
 
 #music .menu-options h5:hover {
     color: var(--txt-color-primary);
     cursor: pointer;
+    padding: 0 .5rem;
 }
 
 #music .menu-options h5 {
@@ -463,7 +462,29 @@ section {
 
 /* spotify-md laptop */
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:1250px) {
+
+    #music .row {
+        flex-wrap: wrap;
+    }
+
+    #music .col {
+        width: 25%;
+
+    }
+
+
+
+    #music .menu-options {
+        flex-wrap: wrap;
+    }
+
+    #music .menu-options h5 {
+
+        padding: .5rem .5rem;
+    }
+
+}
 
 
 /* spotify-sm tablet */
