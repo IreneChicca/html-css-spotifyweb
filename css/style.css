@@ -227,7 +227,7 @@ section {
 }
 
 #music .menu-options {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -237,12 +237,13 @@ section {
 #music .menu-options h5:hover {
     color: var(--txt-color-primary);
     cursor: pointer;
-    padding: 0 .5rem;
+
 }
 
 #music .menu-options h5 {
     text-transform: uppercase;
     color: var(--txt-color-second);
+    padding: 0 .5rem;
 }
 
 #music h2 {
@@ -345,7 +346,9 @@ section {
 
 #footer .song-info i {
     color: var(--txt-color-second);
+    padding: .4rem;
 }
+
 
 #footer .song-player {
 
@@ -475,32 +478,44 @@ section {
 
 
 
+
     #music .menu-options {
         flex-wrap: wrap;
+        width: 100%;
     }
 
     #music .menu-options h5 {
 
-        padding: .5rem .5rem;
+        padding: 1rem .5rem;
+    }
+
+
+    #footer .song-bar .bar {
+        width: 20rem;
     }
 
 }
 
 
-/* spotify-sm tablet */
+/* spotify-s tablet */
 
 @media screen and (max-width:992px) {
-    header {
-        background-color: palevioletred;
+    #music .col {
+        width: 50%;
+    }
+
+
+    #footer .song-bar .bar {
+        width: 12rem;
+    }
+
+    #footer .song-info-icon {
+        display: flex;
+        flex-direction: column;
     }
 
 }
 
 /* spotify-x-small mobile */
 
-@media screen and (max-width:576px) {
-
-    header {
-        background-color: greenyellow;
-    }
-}
+@media screen and (max-width:576px) {}
